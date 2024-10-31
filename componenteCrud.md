@@ -37,6 +37,7 @@
   </div>
 </template>
 <script>
+
 // Componente CRUD Reutilizable
 export default {
   data() {
@@ -69,6 +70,8 @@ export default {
         this.clientes.push({ id: Date.now(), name: this.newCliente.trim() });
         this.newCliente = "";
       }
+
+      
     },
     updateCliente(id, name) {
       const cliente = this.clientes.find((c) => c.id === id);
