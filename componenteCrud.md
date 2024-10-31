@@ -1,4 +1,5 @@
 [!Captura de pantalla = ![alt](pantallaCrud.png)]
+
 <template>
   <!-- Contenedor Principal -->
   <div id="app">
@@ -14,6 +15,7 @@
       @update="updateProducto"
       @delete="deleteProducto"
     />
+
     <!-- Componente CRUD para Clientes -->
     <CrudSection
       title="Clientes"
@@ -23,6 +25,7 @@
       @update="updateCliente"
       @delete="deleteCliente"
     />
+
     <!-- Componente CRUD para Número de Teléfono -->
     <CrudSection
       title="Número de Teléfono"
@@ -32,13 +35,15 @@
       @update="updateTelefono"
       @delete="deleteTelefono"
     />
+
     <!-- Botón de Finalizar Pedido -->
     <button @click="finalizeOrder" class="btn-finalize">Pedido Realizado</button>
   </div>
 </template>
+
 <script>
 
-// Componente CRUD Reutilizable
+
 export default {
   data() {
     return {
@@ -48,14 +53,15 @@ export default {
       newProducto: "",
       newCliente: "",
       newTelefono: "",
-    };},
+    };
+  },
   methods: {
     addProducto() {
       if (this.newProducto.trim()) {
         this.productos.push({ id: Date.now(), name: this.newProducto.trim() });
         this.newProducto = "";
       }
-},
+    },
     updateProducto(id, name) {
       const producto = this.productos.find((p) => p.id === id);
       if (producto) producto.name = name;
@@ -63,7 +69,8 @@ export default {
     deleteProducto(id) {
       this.productos = this.productos.filter((p) => p.id !== id);
     },
-      addCliente() {
+
+    addCliente() {
       if (this.newCliente.trim()) {
         this.clientes.push({ id: Date.now(), name: this.newCliente.trim() });
         this.newCliente = "";
@@ -93,5 +100,8 @@ export default {
 
     finalizeOrder() {
       alert("¡Pedido realizado con éxito!");
-    },},};
+    },
+  },
+};
 </script>
+
