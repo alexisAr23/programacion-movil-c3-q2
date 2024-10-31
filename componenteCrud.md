@@ -1,5 +1,3 @@
-[!Captura de pantalla = ![alt](pantallaCrud.png)]
-
 <template>
   <!-- Contenedor Principal -->
   <div id="app">
