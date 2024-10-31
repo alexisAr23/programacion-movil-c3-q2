@@ -18,13 +18,13 @@
 
     <!-- Botón de Finalizar Pedido -->
     <button @click="finalizeOrder" class="btn-finalize">Pedido Realizado</button>
-
-  </div>
-</template>
-<script>
-
-export default {
-  data() {
+    
+    </div>
+    </template>
+    <script>
+    
+    export default {
+    data() { 
     return {
       productos: [],
       clientes: [],
@@ -33,14 +33,20 @@ export default {
       newCliente: "",
       newTelefono: "",
     };
-  },
- 
- methods: {
+    
+      },
+      
+      
+      
+      methods:{
+  
     addProducto() {
+    
       if (this.newProducto.trim()) {
         this.productos.push({ id: Date.now(), name: this.newProducto.trim() });
         this.newProducto = "";
       }
+      
     },
     
     
@@ -91,7 +97,7 @@ export default {
     
     finalizeOrder() {
       alert("¡Pedido realizado con éxito!");
-    },
-  },
-};
-</script>
+    }, 
+      },
+    };
+    </script>
