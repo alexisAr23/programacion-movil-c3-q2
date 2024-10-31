@@ -1,4 +1,4 @@
-[[alt](Captura%20de%20pantalla%202024-10-31%20033739.png)]
+[!Captura de pantalla = ![alt](Captura%20de%20pantalla%202024-10-31%20033739.png)]
 
 
 <template>
