@@ -6,26 +6,6 @@
     <!-- Título de la Tienda -->
     <h1>TIENDA ALEXIS</h1>
 
-    <!-- Componente CRUD para Productos -->
-    <CrudSection
-      title="Productos"
-      :items="productos"
-      new-item-placeholder="Añadir nuevo producto"
-      @add="addProducto"
-      @update="updateProducto"
-      @delete="deleteProducto"
-    />
-
-    <!-- Componente CRUD para Clientes -->
-    <CrudSection
-      title="Clientes"
-      :items="clientes"
-      new-item-placeholder="Añadir nuevo cliente"
-      @add="addCliente"
-      @update="updateCliente"
-      @delete="deleteCliente"
-    />
-
     <!-- Componente CRUD para Número de Teléfono -->
     <CrudSection
       title="Número de Teléfono"
@@ -42,8 +22,6 @@
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
@@ -104,4 +82,3 @@ export default {
   },
 };
 </script>
-
