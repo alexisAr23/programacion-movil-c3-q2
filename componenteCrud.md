@@ -48,15 +48,14 @@ export default {
       newProducto: "",
       newCliente: "",
       newTelefono: "",
-    };
-  },
+    };},
   methods: {
     addProducto() {
       if (this.newProducto.trim()) {
         this.productos.push({ id: Date.now(), name: this.newProducto.trim() });
         this.newProducto = "";
       }
-    },
+},
     updateProducto(id, name) {
       const producto = this.productos.find((p) => p.id === id);
       if (producto) producto.name = name;
@@ -64,14 +63,11 @@ export default {
     deleteProducto(id) {
       this.productos = this.productos.filter((p) => p.id !== id);
     },
-
-    addCliente() {
+      addCliente() {
       if (this.newCliente.trim()) {
         this.clientes.push({ id: Date.now(), name: this.newCliente.trim() });
         this.newCliente = "";
       }
-
-      
     },
     updateCliente(id, name) {
       const cliente = this.clientes.find((c) => c.id === id);
@@ -97,7 +93,5 @@ export default {
 
     finalizeOrder() {
       alert("¡Pedido realizado con éxito!");
-    },
-  },
-};
+    },},};
 </script>
