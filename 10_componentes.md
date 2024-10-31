@@ -1,8 +1,4 @@
-
-
-[!imagen=  ![alt](Captura%20de%20pantalla%202024-10-31%20033612.png) ]
-
-
+[!imagen=  ![alt](pantalla10_componentes.png) ]
 <ion-page>
 
   <!-- ion-page: Página Principal -->

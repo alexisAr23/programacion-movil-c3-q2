@@ -1,6 +1,4 @@
-[!Captura de pantalla = ![alt](Captura%20de%20pantalla%202024-10-31%20033739.png)]
-
-
+[!Captura de pantalla = ![alt](pantallaCrud.png)]
 <template>
   <!-- Contenedor Principal -->
   <div id="app">
@@ -16,7 +14,6 @@
       @update="updateProducto"
       @delete="deleteProducto"
     />
-
     <!-- Componente CRUD para Clientes -->
     <CrudSection
       title="Clientes"
@@ -26,7 +23,6 @@
       @update="updateCliente"
       @delete="deleteCliente"
     />
-
     <!-- Componente CRUD para Número de Teléfono -->
     <CrudSection
       title="Número de Teléfono"
@@ -36,12 +32,10 @@
       @update="updateTelefono"
       @delete="deleteTelefono"
     />
-
     <!-- Botón de Finalizar Pedido -->
     <button @click="finalizeOrder" class="btn-finalize">Pedido Realizado</button>
   </div>
 </template>
-
 <script>
 // Componente CRUD Reutilizable
 export default {
